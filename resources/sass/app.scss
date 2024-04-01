@@ -1,0 +1,100 @@
+@import url('https://fonts.bunny.net/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+@import 'swiper/swiper-bundle.css';
+
+
+.navbar {
+    height: 90px;
+}
+
+.btn-carrinho {
+    position: relative;
+    display: inline-block;
+}
+
+.item-count {
+    position: absolute;
+    top: 1px;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+}
+.logo-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100%;
+    width: 150px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+.nav-link.btn:hover,
+.nav-link.btn:focus {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+
+.nav-link.btn-carrinho
+{
+    margin-left: 5px;
+    color: white;
+    font-size: 20px;
+    padding-left: 0px !important;
+    display: block !important;
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 1000px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+    .navbar-nav {
+        width: 100%;
+    }
+    .navbar-nav .nav-link {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .navbar-text.name {
+        display: none;
+    }
+}
+
